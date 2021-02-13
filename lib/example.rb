@@ -4,6 +4,7 @@ class Garden
   def initialize(name:)
     @name = name
   end
+  
 
   def plants
     Plant.all.select do |plant|

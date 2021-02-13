@@ -1,4 +1,4 @@
-# Something is missing here
+require_relative './plant.rb'
 
 class Garden
   attr_accessor :name
@@ -6,6 +6,7 @@ class Garden
   def initialize(name:)
     @name = name
   end
+
 
   def plants
     Plant.all.select do |plant|
